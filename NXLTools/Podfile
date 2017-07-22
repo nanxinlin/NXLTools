@@ -26,6 +26,5 @@ pod 'SAMKeychain'
 pod 'Bugly'
 pod 'SMSSDK'
 pod 'pop'
-#pod 'DWScrollPictures'
 
 end

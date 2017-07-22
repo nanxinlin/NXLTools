@@ -1,0 +1,6 @@
+framework module Pods_NXLTools {
+  umbrella header "Pods-NXLTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

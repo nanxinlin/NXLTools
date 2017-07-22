@@ -1,0 +1,46 @@
+//
+//  NSString+Method.h
+//  SalonAuction
+//
+//  Created by 李大卫 on 16/5/30.
+//  Copyright © 2016年 hy_les. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NSString (Method)
+
+/**
+ *  @author hy_les, 16-06-13 14:06:07
+ *
+ *   是否包含字符串
+ *
+ *  @param string
+ *
+ *  @return  yes：包含
+ */
+- (BOOL)containsString:(NSString *)string;
+
+
+
+/**
+ *  根据文本自动计算大小
+ *
+ *  @param font    文本的Font
+ *  @param maxSize 文本的最大size
+ *
+ *  @return 文本的真实size
+ */
+- (CGSize)stringWithFont:(UIFont *)font maxSize:(CGSize)maxSize;
+
+
+/**
+ *  @author hy_les, 16-06-13 14:06:07
+ *
+ *   得到当前时间
+ *
+ *  @return
+ */
++ (NSString *)currentDateString;
+
+@end

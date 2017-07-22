@@ -1,0 +1,38 @@
+//
+//  NSString+Method.m
+//  SalonAuction
+//
+//  Created by 李大卫 on 16/5/30.
+//  Copyright © 2016年 hy_les. All rights reserved.
+//
+
+#import "NSString+Method.h"
+
+@implementation NSString (Method)
+
+
+#pragma mark - 是否包含某个字符串
+- (BOOL)containsString:(NSString *)string {
+    if (string == nil) return NO;
+    return [self rangeOfString:string].location != NSNotFound;
+}
+
+
+#pragma mark - 根据文本自动计算大小
+- (CGSize)stringWithFont:(UIFont *)font maxSize:(CGSize)maxSize
+{
+    return [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
+}
+
+
+#pragma mark - 得到当前时间
++ (NSString *)currentDateString
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"YYYY-MM-dd hh:mm:ss"];
+    NSString *dateString = [dateFormatter stringFromDate:[NSDate date]];
+    return dateString;
+}
+
+
+@end

@@ -1,0 +1,52 @@
+//
+//  UIColor+Method.h
+//  SalonAuction
+//
+//  Created by 李大卫 on 16/5/30.
+//  Copyright © 2016年 hy_les. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+
+// 颜色
+#define NXLColor(r, g, b)        [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define NXLColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+// 随机色
+#define NXLRandomColor NXLColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+// 16进制字符串获取颜色
+#ifndef UIColorHex
+#define UIColorHex(_hex_)   [UIColor colorWithHexString:((__bridge NSString *)CFSTR(#_hex_))]
+#endif
+
+
+@interface UIColor (Method)
+
+
+#pragma mark - 16进制转颜色
+/**
+ *  @author hy_les, 16-05-30 18:05:08
+ *
+ *  根据16进制字符串获取颜色,默认透明度为1
+ *
+ *  @param hexStr 16进制字符串
+ *
+ *  @return 颜色
+ */
++ (UIColor *)colorWithHexString:(NSString *)hexStr;
+
+
+/**
+ *  @author hy_les, 16-05-30 18:05:05
+ *
+ *  根据16进制字符串获取颜色
+ *
+ *  @param hexStr 16进制字符串
+ *  @param alpha  透明度
+ *
+ *  @return 颜色
+ */
++ (UIColor *)colorWithHexString:(NSString *)hexStr alpha:(CGFloat)alpha;
+
+
+@end

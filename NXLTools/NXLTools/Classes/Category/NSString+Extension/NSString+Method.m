@@ -333,14 +333,14 @@ char pinyinFirstLetter(unsigned short hanzi)
 }
 
 #pragma mark - 升序
-- (NSString *) uppercasePinYinFirstLetter
+- (NSString *)uppercasePinYinFirstLetter
 {
     unichar firstLetter = [self characterAtIndex:0];
     char cFirstLetter = pinyinFirstLetter(firstLetter);
     return [[NSString stringWithFormat:@"%c",cFirstLetter] uppercaseString];
 }
 #pragma mark - 降序
-- (NSString *) lowercasePinYinFirstLetter
+- (NSString *)lowercasePinYinFirstLetter
 {
     unichar firstLetter = [self characterAtIndex:0];
     char cFirstLetter = pinyinFirstLetter(firstLetter);

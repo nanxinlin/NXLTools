@@ -42,4 +42,5 @@
         YYCategories — 功能丰富的 Category 类型工具库。*/
 #import "YBHttpTool.h"
 #import "MTVersionHelper.h"
+#import "DWScrollPictures.h"
 #endif /* PrefixHeader_pch */

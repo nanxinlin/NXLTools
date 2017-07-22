@@ -15,6 +15,9 @@
 		A77FAA601F23AD24008E7266 /* YBMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA5D1F23AD24008E7266 /* YBMD5.m */; };
 		A77FAA661F23BBE8008E7266 /* MTVersionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA631F23BBE8008E7266 /* MTVersionHelper.m */; };
 		A77FAA671F23BBE8008E7266 /* MTVersionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA651F23BBE8008E7266 /* MTVersionModel.m */; };
+		A77FAA771F23C539008E7266 /* DWScrollPictures.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA6B1F23C539008E7266 /* DWScrollPictures.m */; };
+		A77FAA781F23C539008E7266 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA6D1F23C539008E7266 /* UIView+Extension.m */; };
+		A77FAA811F23C5B1008E7266 /* DWSwipeGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA801F23C5B1008E7266 /* DWSwipeGestures.m */; };
 		A7F2BA581F234EA900BB4A2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F2BA571F234EA900BB4A2C /* main.m */; };
 		A7F2BA5B1F234EA900BB4A2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F2BA5A1F234EA900BB4A2C /* AppDelegate.m */; };
 		A7F2BA611F234EA900BB4A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F2BA5F1F234EA900BB4A2C /* Main.storyboard */; };
@@ -66,6 +69,12 @@
 		A77FAA631F23BBE8008E7266 /* MTVersionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTVersionHelper.m; sourceTree = "<group>"; };
 		A77FAA641F23BBE8008E7266 /* MTVersionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTVersionModel.h; sourceTree = "<group>"; };
 		A77FAA651F23BBE8008E7266 /* MTVersionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTVersionModel.m; sourceTree = "<group>"; };
+		A77FAA6A1F23C539008E7266 /* DWScrollPictures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWScrollPictures.h; sourceTree = "<group>"; };
+		A77FAA6B1F23C539008E7266 /* DWScrollPictures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWScrollPictures.m; sourceTree = "<group>"; };
+		A77FAA6C1F23C539008E7266 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		A77FAA6D1F23C539008E7266 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		A77FAA7F1F23C5B1008E7266 /* DWSwipeGestures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSwipeGestures.h; sourceTree = "<group>"; };
+		A77FAA801F23C5B1008E7266 /* DWSwipeGestures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSwipeGestures.m; sourceTree = "<group>"; };
 		A7F2BA531F234EA900BB4A2C /* NXLTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NXLTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F2BA571F234EA900BB4A2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7F2BA591F234EA900BB4A2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +138,7 @@
 		A77FAA0A1F235B09008E7266 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				A77FAA681F23C539008E7266 /* DWScrollPictures */,
 				A77FAA611F23BBE8008E7266 /* MTNewVersion */,
 				A77FAA561F23AD24008E7266 /* YBAFNCache */,
 				A77FAA4C1F236678008E7266 /* Marcos */,
@@ -198,6 +208,35 @@
 				A77FAA651F23BBE8008E7266 /* MTVersionModel.m */,
 			);
 			path = MTNewVersion;
+			sourceTree = "<group>";
+		};
+		A77FAA681F23C539008E7266 /* DWScrollPictures */ = {
+			isa = PBXGroup;
+			children = (
+				A77FAA7E1F23C5B1008E7266 /* DWSwipeGestures */,
+				A77FAA691F23C539008E7266 /* DWScrollPictures */,
+			);
+			path = DWScrollPictures;
+			sourceTree = "<group>";
+		};
+		A77FAA691F23C539008E7266 /* DWScrollPictures */ = {
+			isa = PBXGroup;
+			children = (
+				A77FAA6A1F23C539008E7266 /* DWScrollPictures.h */,
+				A77FAA6B1F23C539008E7266 /* DWScrollPictures.m */,
+				A77FAA6C1F23C539008E7266 /* UIView+Extension.h */,
+				A77FAA6D1F23C539008E7266 /* UIView+Extension.m */,
+			);
+			path = DWScrollPictures;
+			sourceTree = "<group>";
+		};
+		A77FAA7E1F23C5B1008E7266 /* DWSwipeGestures */ = {
+			isa = PBXGroup;
+			children = (
+				A77FAA7F1F23C5B1008E7266 /* DWSwipeGestures.h */,
+				A77FAA801F23C5B1008E7266 /* DWSwipeGestures.m */,
+			);
+			path = DWSwipeGestures;
 			sourceTree = "<group>";
 		};
 		A7F2BA4A1F234EA900BB4A2C = {
@@ -464,8 +503,11 @@
 				A7F2BA641F234EA900BB4A2C /* NXLTools.xcdatamodeld in Sources */,
 				A7F2BA5B1F234EA900BB4A2C /* AppDelegate.m in Sources */,
 				A77FAA601F23AD24008E7266 /* YBMD5.m in Sources */,
+				A77FAA771F23C539008E7266 /* DWScrollPictures.m in Sources */,
 				A77FAA5F1F23AD24008E7266 /* YBHttpTool.m in Sources */,
+				A77FAA781F23C539008E7266 /* UIView+Extension.m in Sources */,
 				A77FAA661F23BBE8008E7266 /* MTVersionHelper.m in Sources */,
+				A77FAA811F23C5B1008E7266 /* DWSwipeGestures.m in Sources */,
 				A77FAA4B1F236133008E7266 /* NSString+Method.m in Sources */,
 				A77FAA671F23BBE8008E7266 /* MTVersionModel.m in Sources */,
 				A7F2BA581F234EA900BB4A2C /* main.m in Sources */,

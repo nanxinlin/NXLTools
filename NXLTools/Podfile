@@ -22,5 +22,10 @@ pod 'JLRoutes'
 pod 'YYKit'
 pod 'FMDB'
 #pod 'Realm'
+pod 'SAMKeychain'
+#pod 'DWScrollPictures', '1.0.7'
+pod 'Bugly'
+pod 'SMSSDK'
+pod 'pop'
 
 end

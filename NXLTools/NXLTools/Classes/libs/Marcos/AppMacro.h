@@ -19,6 +19,11 @@
 #define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
 //屏幕高度
 #define kScreenheight ([UIScreen mainScreen].bounds.size.height)
+//Window
+#define KEY_WINDOW  [[UIApplication sharedApplication].delegate window]
+//UIDevice
+#define ISIPAD ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+#define IS320Screen (MAIN_SCREEN.bounds.size.width == 320)
 //横向比例
 #define kWidthScale(number) (kScreenWidth/375.*(number/2))
 //纵向比例
@@ -41,14 +46,27 @@
 //------------------------------------钱数转换------------------------------------------
 #define kMoney(name) [NSString stringWithFormat:@"%.2f",[name floatValue]]
 
-
 //定义了一个__weak的self_weak_变量
-#define WeakSelf(weakSelf)   __weak __typeof(&*self) weakSelf = self;
+#define KWeakSelf(weakSelf)   __weak __typeof(&*self) weakSelf = self;
 
 //局域定义了一个__strong的self指针指向self_weak
-#define StrongSelf(strongSelf)  __strong __typeof(&*self) strongSelf = weakSelf;
+#define KStrongSelf(strongSelf)  __strong __typeof(&*self) strongSelf = weakSelf;
+// NSURL
+#define KUrlWithString(url)  [NSURL URLWithString:url]
+//NSString
+#define KEmpty_str @""
+#define KStr_IsNULL_OR_Empty(str)       (str == nil || [str isEqualToString:KEmpty_str] || [str isEqual:[NSNull null]])
+#define KStr_IsNOT_NULL_OR_Empty(str)   (str != nil && ![str isEqualToString:KEmpty_str] && ![str isEqual:[NSNull null]])
+//CacheFolder
+#define kCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
+#define kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
+#define KFolder_Path_With_FolderName(folder) [kCachesPath stringByAppendingPathComponent:folder]
 
-
-
+//NSLog
+#ifdef DEBUG
+#define NXLLog(...) NSLog(__VA_ARGS__)
+#else
+#define NXLLog(...)
+#endif
 
 #endif /* AppMacro_h */

@@ -10,6 +10,9 @@
 		2E62A0BBCA9B6B234BCE66DD /* Pods_NXLTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C52A8AC5331A522404668F2 /* Pods_NXLTools.framework */; };
 		A77FAA471F235F76008E7266 /* UIColor+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA461F235F76008E7266 /* UIColor+Method.m */; };
 		A77FAA4B1F236133008E7266 /* NSString+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA4A1F236133008E7266 /* NSString+Method.m */; };
+		A77FAA5E1F23AD24008E7266 /* YBCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA591F23AD24008E7266 /* YBCacheTool.m */; };
+		A77FAA5F1F23AD24008E7266 /* YBHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA5B1F23AD24008E7266 /* YBHttpTool.m */; };
+		A77FAA601F23AD24008E7266 /* YBMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA5D1F23AD24008E7266 /* YBMD5.m */; };
 		A7F2BA581F234EA900BB4A2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F2BA571F234EA900BB4A2C /* main.m */; };
 		A7F2BA5B1F234EA900BB4A2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F2BA5A1F234EA900BB4A2C /* AppDelegate.m */; };
 		A7F2BA611F234EA900BB4A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F2BA5F1F234EA900BB4A2C /* Main.storyboard */; };
@@ -46,6 +49,17 @@
 		A77FAA491F236133008E7266 /* NSString+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Method.h"; sourceTree = "<group>"; };
 		A77FAA4A1F236133008E7266 /* NSString+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Method.m"; sourceTree = "<group>"; };
 		A77FAA4D1F23667F008E7266 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A77FAA511F23A61A008E7266 /* AppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		A77FAA531F23A61A008E7266 /* NetWorkMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkMacro.h; sourceTree = "<group>"; };
+		A77FAA541F23A61A008E7266 /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		A77FAA551F23A78F008E7266 /* ColorMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
+		A77FAA571F23AD24008E7266 /* YBCacheConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCacheConstant.h; sourceTree = "<group>"; };
+		A77FAA581F23AD24008E7266 /* YBCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCacheTool.h; sourceTree = "<group>"; };
+		A77FAA591F23AD24008E7266 /* YBCacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCacheTool.m; sourceTree = "<group>"; };
+		A77FAA5A1F23AD24008E7266 /* YBHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBHttpTool.h; sourceTree = "<group>"; };
+		A77FAA5B1F23AD24008E7266 /* YBHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBHttpTool.m; sourceTree = "<group>"; };
+		A77FAA5C1F23AD24008E7266 /* YBMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBMD5.h; sourceTree = "<group>"; };
+		A77FAA5D1F23AD24008E7266 /* YBMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBMD5.m; sourceTree = "<group>"; };
 		A7F2BA531F234EA900BB4A2C /* NXLTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NXLTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F2BA571F234EA900BB4A2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7F2BA591F234EA900BB4A2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +123,7 @@
 		A77FAA0A1F235B09008E7266 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				A77FAA561F23AD24008E7266 /* YBAFNCache */,
 				A77FAA4C1F236678008E7266 /* Marcos */,
 			);
 			path = libs;
@@ -145,8 +160,26 @@
 			isa = PBXGroup;
 			children = (
 				A77FAA4D1F23667F008E7266 /* PrefixHeader.pch */,
+				A77FAA511F23A61A008E7266 /* AppMacro.h */,
+				A77FAA551F23A78F008E7266 /* ColorMacro.h */,
+				A77FAA531F23A61A008E7266 /* NetWorkMacro.h */,
+				A77FAA541F23A61A008E7266 /* Notification.h */,
 			);
 			path = Marcos;
+			sourceTree = "<group>";
+		};
+		A77FAA561F23AD24008E7266 /* YBAFNCache */ = {
+			isa = PBXGroup;
+			children = (
+				A77FAA571F23AD24008E7266 /* YBCacheConstant.h */,
+				A77FAA581F23AD24008E7266 /* YBCacheTool.h */,
+				A77FAA591F23AD24008E7266 /* YBCacheTool.m */,
+				A77FAA5A1F23AD24008E7266 /* YBHttpTool.h */,
+				A77FAA5B1F23AD24008E7266 /* YBHttpTool.m */,
+				A77FAA5C1F23AD24008E7266 /* YBMD5.h */,
+				A77FAA5D1F23AD24008E7266 /* YBMD5.m */,
+			);
+			path = YBAFNCache;
 			sourceTree = "<group>";
 		};
 		A7F2BA4A1F234EA900BB4A2C = {
@@ -412,8 +445,11 @@
 				A77FAA471F235F76008E7266 /* UIColor+Method.m in Sources */,
 				A7F2BA641F234EA900BB4A2C /* NXLTools.xcdatamodeld in Sources */,
 				A7F2BA5B1F234EA900BB4A2C /* AppDelegate.m in Sources */,
+				A77FAA601F23AD24008E7266 /* YBMD5.m in Sources */,
+				A77FAA5F1F23AD24008E7266 /* YBHttpTool.m in Sources */,
 				A77FAA4B1F236133008E7266 /* NSString+Method.m in Sources */,
 				A7F2BA581F234EA900BB4A2C /* main.m in Sources */,
+				A77FAA5E1F23AD24008E7266 /* YBCacheTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

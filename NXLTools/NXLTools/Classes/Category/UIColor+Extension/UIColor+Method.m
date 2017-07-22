@@ -7,7 +7,6 @@
 //
 
 #import "UIColor+Method.h"
-
 @implementation UIColor (Method)
 
 #pragma mark - 16进制转颜色，默认透明度

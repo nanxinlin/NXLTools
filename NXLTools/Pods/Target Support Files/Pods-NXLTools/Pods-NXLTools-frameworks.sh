@@ -104,6 +104,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Toast/Toast.framework"
   install_framework "$BUILT_PRODUCTS_DIR/WebViewJavascriptBridge/WebViewJavascriptBridge.framework"
   install_framework "$BUILT_PRODUCTS_DIR/XHLaunchAd/XHLaunchAd.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/YPTabBarController/YPTabBarController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YYKit/YYKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -122,6 +123,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Toast/Toast.framework"
   install_framework "$BUILT_PRODUCTS_DIR/WebViewJavascriptBridge/WebViewJavascriptBridge.framework"
   install_framework "$BUILT_PRODUCTS_DIR/XHLaunchAd/XHLaunchAd.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/YPTabBarController/YPTabBarController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YYKit/YYKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

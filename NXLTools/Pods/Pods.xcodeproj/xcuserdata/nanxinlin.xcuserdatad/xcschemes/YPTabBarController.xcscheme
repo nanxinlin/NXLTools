@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '329D1D22AF7B81156DDA3C1C4E49A762'
-               BlueprintName = 'SDWebImage'
+               BlueprintIdentifier = '042AD1ECBE7F7410C4B5B1C58EA6A111'
+               BlueprintName = 'YPTabBarController'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SDWebImage.framework'>
+               BuildableName = 'YPTabBarController.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

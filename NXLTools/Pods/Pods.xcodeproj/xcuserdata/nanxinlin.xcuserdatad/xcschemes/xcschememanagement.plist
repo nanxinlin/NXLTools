@@ -84,6 +84,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YPTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -91,92 +96,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>0418AD9FD50139AEA5505F0CF06216D4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>279AA6726F52A334C45E85774BD21A3D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>41FA54D12162DAD51D02FC58A2CD5034</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>42A50D97CF11303A1A1D7CDF696759B8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4CC515BBE3A9B7F3A329AAF5B2A78641</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5AA17C95E926B760FD08E0B487DAEFA2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>61F032F5545DB2FF09C4B29E94C7ACC7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7B707E013905445DE6C29FAFB3667CDD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>83B5B60C676A8D31829A6AE91CE86A75</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A782204234C586A97C50A3C01CD8A29A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D52144DE9D7255DE912490FF5A806573</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D5E8F3B2B6A2423FE95F6E671535D73C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E14A62900910444707A5504D25EC98DC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F710B8862FFF4EDDB60AA25FAE8F1AEF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F8C8852C8F056CF239756E012574624D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F9CBF952FA602E5F4FBE3B6457254E13</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

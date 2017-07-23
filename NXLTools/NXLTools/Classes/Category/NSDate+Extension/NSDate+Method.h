@@ -88,7 +88,7 @@
 + (NSInteger)getCurrentSecond;  // 秒
 + (NSInteger)getCurrentWeekday; //星期
 + (NSDateComponents *)getCurrentDateDetail; //当前时间的类型
-#pragma mark - 时间字符串的格式化
+#pragma mark - 获取当前时间跟指定的时间做比较
 /**
  获取当前时间跟指定的时间做比较
  return

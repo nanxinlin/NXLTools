@@ -7,7 +7,9 @@
 //
 
 #import "NSString+Method.h"
+#import <UIKit/UIKit.h>
 #import <CommonCrypto/CommonCrypto.h>
+#import <AdSupport/ASIdentifierManager.h>
 #define HANZI_START 19968
 #define HANZI_COUNT 20902
 static char firstLetterArray[HANZI_COUNT] =
@@ -238,6 +240,23 @@ char pinyinFirstLetter(unsigned short hanzi)
 
 @implementation NSString (Method)
 
+#pragma mark - 字符串的判空
+/**
+ 字符串的判空
+ 
+ @param str 判断的字符串
+ */
++ (BOOL)isNilOrEmpty:(NSString *)str {
+    if (!str) {
+        return YES;
+    }
+    NSString *temp = [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    if (!temp || temp.length == 0) {
+        return YES;
+    }
+    return NO;
+}
+
 
 #pragma mark - 是否包含某个字符串
 
@@ -279,12 +298,42 @@ char pinyinFirstLetter(unsigned short hanzi)
     
     return digest;
 }
+#pragma mark - 32位 小写
+
+- (NSString *)MD5ForLower32Str {
+    //要进行UTF8的转码
+    const char* input = [self UTF8String];
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(input, (CC_LONG)strlen(input), result);
+    
+    NSMutableString *digest = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    for (NSInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [digest appendFormat:@"%02x", result[i]];
+    }
+    
+    return digest;
+}
 
 #pragma mark - 32位 大写
 + (NSString *)MD5ForUpper32Bate:(NSString *)str{
     
     //要进行UTF8的转码
     const char* input = [str UTF8String];
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(input, (CC_LONG)strlen(input), result);
+    
+    NSMutableString *digest = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    for (NSInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [digest appendFormat:@"%02X", result[i]];
+    }
+    
+    return digest;
+}
+#pragma mark - 32位 大写
+- (NSString *)MD5ForUpper32Str{
+    
+    //要进行UTF8的转码
+    const char* input = [self UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     CC_MD5(input, (CC_LONG)strlen(input), result);
     
@@ -307,6 +356,17 @@ char pinyinFirstLetter(unsigned short hanzi)
     }
     return string;
 }
+#pragma mark - 16位 小写
+- (NSString *)MD5ForLower16Str{
+    
+    NSString *md5Str = [[self class] MD5ForLower32Str];
+    
+    NSString  *string;
+    for (int i=0; i<24; i++) {
+        string=[md5Str substringWithRange:NSMakeRange(8, 16)];
+    }
+    return string;
+}
 
 #pragma mark - 16位 大写
 + (NSString *)MD5ForUpper16Bate:(NSString *)str{
@@ -319,6 +379,18 @@ char pinyinFirstLetter(unsigned short hanzi)
     }
     return string;
 }
+#pragma mark - 16位 大写
+- (NSString *)MD5ForUpper16Str{
+    
+    NSString *md5Str = [[self class] MD5ForUpper32Str];
+    
+    NSString  *string;
+    for (int i=0; i<24; i++) {
+        string=[md5Str substringWithRange:NSMakeRange(8, 16)];
+    }
+    return string;
+}
+
 
 #pragma mark - 生成时间戳
 /**
@@ -346,6 +418,60 @@ char pinyinFirstLetter(unsigned short hanzi)
     char cFirstLetter = pinyinFirstLetter(firstLetter);
     return [[NSString stringWithFormat:@"%c",cFirstLetter] lowercaseString];
 }
+#pragma mark -  生成唯一标识符(默认采用CFUUID,无限制)
 
+/**
+  生成唯一标识符(默认采用CFUUID,无限制)
+ 在2013年3月21日苹果已经通知开发者，从2013年5月1日起，访问UIDID的应用将不再能通过审核，替代的方案是开发者应该使用“在iOS 6中介绍的Vendor或Advertising标示符”。
+ 分散式系統中的所有元素，都能有唯一的辨识资讯，而不需要透过中央控制端來做辨识资讯的指定。如此一來，每個人都可以建立不与其它人冲突的 UUID。在這样的情況下，就不需考虑资料库建立时的名称重复问题
+ UUID OR GUID最大优点在於算法不依赖数据库，可以入库前预生成。
+ */
++ (NSString *)GUIDString {
+    return [self UUIDString];
+}
+/**
+ UDID的全名为 Unique Device Identifier :设备唯一标识符
+ UDID是一个40位十六进制序列
+ 在iOS5 中可以获取,但是,在此之后,被苹果禁用了
+ + (NSString *)UDIDString {
+ NSString *udid = [[UIDevice currentDevice] uniqueIdentifier];
+ return udid;
+ }
+ */
+
++ (NSString *)UUIDString {
+    CFUUIDRef puuid = CFUUIDCreate( nil );
+    CFStringRef uuidString = CFUUIDCreateString( nil, puuid );
+    NSString * result = (NSString *)CFBridgingRelease(CFStringCreateCopy( NULL, uuidString));
+    CFRelease(puuid);
+    CFRelease(uuidString);
+    return result;
+}
+#pragma mark -  通过NSUUID获取唯一标识符,限制:当前系统>=6.0
+/**
+ 通过NSUUID获取唯一标识符,限制:当前系统>=6.0
+ */
++ (NSString *)NSUUIDString {
+    NSString *uuid = [[NSUUID UUID] UUIDString];
+    return uuid;
+}
+
+#pragma mark -  Vindor标示符
+/**
+ 一个Vendor是CFBundleIdentifier（反转DNS格式）的前两部分
+ */
++ (NSString *)vendorString {
+    NSString *idfv = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    return idfv;
+}
+
+#pragma mark -  生成广告的唯一标识符
+/**
+ 生成广告的唯一标识符
+ */
++ (NSString *)IDFAString {
+    NSString *adId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+    return adId;
+}
 
 @end

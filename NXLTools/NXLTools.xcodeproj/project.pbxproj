@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2E62A0BBCA9B6B234BCE66DD /* Pods_NXLTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C52A8AC5331A522404668F2 /* Pods_NXLTools.framework */; };
-		A77FAA471F235F76008E7266 /* UIColor+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA461F235F76008E7266 /* UIColor+Method.m */; };
 		A77FAA4B1F236133008E7266 /* NSString+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA4A1F236133008E7266 /* NSString+Method.m */; };
 		A77FAA5E1F23AD24008E7266 /* YBCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA591F23AD24008E7266 /* YBCacheTool.m */; };
 		A77FAA5F1F23AD24008E7266 /* YBHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA5B1F23AD24008E7266 /* YBHttpTool.m */; };
@@ -20,7 +19,6 @@
 		A77FAA811F23C5B1008E7266 /* DWSwipeGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA801F23C5B1008E7266 /* DWSwipeGestures.m */; };
 		A77FAA891F243895008E7266 /* TTHUDMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA871F243895008E7266 /* TTHUDMessage.m */; };
 		A77FAA8D1F2442EF008E7266 /* NSDate+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA8C1F2442EF008E7266 /* NSDate+Method.m */; };
-		A77FAA911F244BBF008E7266 /* NSBundle+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA901F244BBF008E7266 /* NSBundle+Method.m */; };
 		A7F2BA581F234EA900BB4A2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F2BA571F234EA900BB4A2C /* main.m */; };
 		A7F2BA5B1F234EA900BB4A2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F2BA5A1F234EA900BB4A2C /* AppDelegate.m */; };
 		A7F2BA611F234EA900BB4A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F2BA5F1F234EA900BB4A2C /* Main.storyboard */; };
@@ -52,8 +50,6 @@
 		22FCFC0FD550A1C552B93676 /* Pods-NXLTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NXLTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NXLTools/Pods-NXLTools.debug.xcconfig"; sourceTree = "<group>"; };
 		2C52A8AC5331A522404668F2 /* Pods_NXLTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NXLTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B606D17367EB95CEFC6EDD /* Pods-NXLTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NXLTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-NXLTools/Pods-NXLTools.release.xcconfig"; sourceTree = "<group>"; };
-		A77FAA451F235F76008E7266 /* UIColor+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Method.h"; sourceTree = "<group>"; };
-		A77FAA461F235F76008E7266 /* UIColor+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Method.m"; sourceTree = "<group>"; };
 		A77FAA491F236133008E7266 /* NSString+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Method.h"; sourceTree = "<group>"; };
 		A77FAA4A1F236133008E7266 /* NSString+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Method.m"; sourceTree = "<group>"; };
 		A77FAA4D1F23667F008E7266 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -82,8 +78,6 @@
 		A77FAA871F243895008E7266 /* TTHUDMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTHUDMessage.m; sourceTree = "<group>"; };
 		A77FAA8B1F2442EF008E7266 /* NSDate+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Method.h"; sourceTree = "<group>"; };
 		A77FAA8C1F2442EF008E7266 /* NSDate+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Method.m"; sourceTree = "<group>"; };
-		A77FAA8F1F244BBF008E7266 /* NSBundle+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Method.h"; sourceTree = "<group>"; };
-		A77FAA901F244BBF008E7266 /* NSBundle+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Method.m"; sourceTree = "<group>"; };
 		A7F2BA531F234EA900BB4A2C /* NXLTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NXLTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F2BA571F234EA900BB4A2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7F2BA591F234EA900BB4A2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,21 +153,10 @@
 		A77FAA431F235F1F008E7266 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				A77FAA8E1F244BA2008E7266 /* NSBundle+Extension */,
 				A77FAA8A1F2442C2008E7266 /* NSDate+Extension */,
 				A77FAA481F236133008E7266 /* NSString+Extension */,
-				A77FAA441F235F76008E7266 /* UIColor+Extension */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		A77FAA441F235F76008E7266 /* UIColor+Extension */ = {
-			isa = PBXGroup;
-			children = (
-				A77FAA451F235F76008E7266 /* UIColor+Method.h */,
-				A77FAA461F235F76008E7266 /* UIColor+Method.m */,
-			);
-			path = "UIColor+Extension";
 			sourceTree = "<group>";
 		};
 		A77FAA481F236133008E7266 /* NSString+Extension */ = {
@@ -267,15 +250,6 @@
 				A77FAA8C1F2442EF008E7266 /* NSDate+Method.m */,
 			);
 			path = "NSDate+Extension";
-			sourceTree = "<group>";
-		};
-		A77FAA8E1F244BA2008E7266 /* NSBundle+Extension */ = {
-			isa = PBXGroup;
-			children = (
-				A77FAA8F1F244BBF008E7266 /* NSBundle+Method.h */,
-				A77FAA901F244BBF008E7266 /* NSBundle+Method.m */,
-			);
-			path = "NSBundle+Extension";
 			sourceTree = "<group>";
 		};
 		A7F2BA4A1F234EA900BB4A2C = {
@@ -538,10 +512,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A77FAA471F235F76008E7266 /* UIColor+Method.m in Sources */,
 				A77FAA891F243895008E7266 /* TTHUDMessage.m in Sources */,
 				A7F2BA641F234EA900BB4A2C /* NXLTools.xcdatamodeld in Sources */,
-				A77FAA911F244BBF008E7266 /* NSBundle+Method.m in Sources */,
 				A7F2BA5B1F234EA900BB4A2C /* AppDelegate.m in Sources */,
 				A77FAA601F23AD24008E7266 /* YBMD5.m in Sources */,
 				A77FAA771F23C539008E7266 /* DWScrollPictures.m in Sources */,

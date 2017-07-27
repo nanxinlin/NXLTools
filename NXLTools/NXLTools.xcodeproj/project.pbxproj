@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2E62A0BBCA9B6B234BCE66DD /* Pods_NXLTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C52A8AC5331A522404668F2 /* Pods_NXLTools.framework */; };
+		A71FD8BA1F29A56100229F3F /* AlertViewRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = A71FD8B31F29A56100229F3F /* AlertViewRecorder.m */; };
+		A71FD8BB1F29A56100229F3F /* FRAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A71FD8B51F29A56100229F3F /* FRAlertView.m */; };
+		A71FD8BC1F29A56100229F3F /* UIAlertView+MyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A71FD8B71F29A56100229F3F /* UIAlertView+MyAlertView.m */; };
+		A71FD8BD1F29A56100229F3F /* TTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A71FD8B91F29A56100229F3F /* TTAlertView.m */; };
 		A761E8F41F25D35600B12943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A761E8F21F25D35600B12943 /* ViewController.swift */; };
 		A761E8F51F25D35600B12943 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A761E8F31F25D35600B12943 /* ViewController.xib */; };
 		A77FAA4B1F236133008E7266 /* NSString+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA4A1F236133008E7266 /* NSString+Method.m */; };
@@ -53,6 +57,14 @@
 		2C52A8AC5331A522404668F2 /* Pods_NXLTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NXLTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B606D17367EB95CEFC6EDD /* Pods-NXLTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NXLTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-NXLTools/Pods-NXLTools.release.xcconfig"; sourceTree = "<group>"; };
 		A71FD8A11F29968900229F3F /* NetWorkMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkMacro.h; sourceTree = "<group>"; };
+		A71FD8B21F29A56100229F3F /* AlertViewRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewRecorder.h; sourceTree = "<group>"; };
+		A71FD8B31F29A56100229F3F /* AlertViewRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewRecorder.m; sourceTree = "<group>"; };
+		A71FD8B41F29A56100229F3F /* FRAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRAlertView.h; sourceTree = "<group>"; };
+		A71FD8B51F29A56100229F3F /* FRAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRAlertView.m; sourceTree = "<group>"; };
+		A71FD8B61F29A56100229F3F /* UIAlertView+MyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MyAlertView.h"; sourceTree = "<group>"; };
+		A71FD8B71F29A56100229F3F /* UIAlertView+MyAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MyAlertView.m"; sourceTree = "<group>"; };
+		A71FD8B81F29A56100229F3F /* TTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAlertView.h; sourceTree = "<group>"; };
+		A71FD8B91F29A56100229F3F /* TTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAlertView.m; sourceTree = "<group>"; };
 		A761E8F11F25D35600B12943 /* NXLTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NXLTools-Bridging-Header.h"; sourceTree = "<group>"; };
 		A761E8F21F25D35600B12943 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A761E8F31F25D35600B12943 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -134,6 +146,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A71FD8B01F29A56100229F3F /* TTAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				A71FD8B11F29A56100229F3F /* FRAlertView */,
+				A71FD8B81F29A56100229F3F /* TTAlertView.h */,
+				A71FD8B91F29A56100229F3F /* TTAlertView.m */,
+			);
+			path = TTAlertView;
+			sourceTree = "<group>";
+		};
+		A71FD8B11F29A56100229F3F /* FRAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				A71FD8B21F29A56100229F3F /* AlertViewRecorder.h */,
+				A71FD8B31F29A56100229F3F /* AlertViewRecorder.m */,
+				A71FD8B41F29A56100229F3F /* FRAlertView.h */,
+				A71FD8B51F29A56100229F3F /* FRAlertView.m */,
+				A71FD8B61F29A56100229F3F /* UIAlertView+MyAlertView.h */,
+				A71FD8B71F29A56100229F3F /* UIAlertView+MyAlertView.m */,
+			);
+			path = FRAlertView;
+			sourceTree = "<group>";
+		};
 		A77FAA091F235AEB008E7266 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +181,7 @@
 		A77FAA0A1F235B09008E7266 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				A71FD8B01F29A56100229F3F /* TTAlertView */,
 				A77FAA821F243895008E7266 /* TTHUDMessage */,
 				A77FAA681F23C539008E7266 /* DWScrollPictures */,
 				A77FAA611F23BBE8008E7266 /* MTNewVersion */,
@@ -525,16 +561,20 @@
 				A761E8F41F25D35600B12943 /* ViewController.swift in Sources */,
 				A77FAA891F243895008E7266 /* TTHUDMessage.m in Sources */,
 				A7F2BA641F234EA900BB4A2C /* NXLTools.xcdatamodeld in Sources */,
+				A71FD8BD1F29A56100229F3F /* TTAlertView.m in Sources */,
 				A7F2BA5B1F234EA900BB4A2C /* AppDelegate.m in Sources */,
 				A77FAA601F23AD24008E7266 /* YBMD5.m in Sources */,
 				A77FAA771F23C539008E7266 /* DWScrollPictures.m in Sources */,
 				A77FAA5F1F23AD24008E7266 /* YBHttpTool.m in Sources */,
+				A71FD8BC1F29A56100229F3F /* UIAlertView+MyAlertView.m in Sources */,
+				A71FD8BA1F29A56100229F3F /* AlertViewRecorder.m in Sources */,
 				A77FAA781F23C539008E7266 /* UIView+Extension.m in Sources */,
 				A77FAA661F23BBE8008E7266 /* MTVersionHelper.m in Sources */,
 				A77FAA811F23C5B1008E7266 /* DWSwipeGestures.m in Sources */,
 				A77FAA4B1F236133008E7266 /* NSString+Method.m in Sources */,
 				A77FAA671F23BBE8008E7266 /* MTVersionModel.m in Sources */,
 				A7F2BA581F234EA900BB4A2C /* main.m in Sources */,
+				A71FD8BB1F29A56100229F3F /* FRAlertView.m in Sources */,
 				A77FAA5E1F23AD24008E7266 /* YBCacheTool.m in Sources */,
 				A77FAA8D1F2442EF008E7266 /* NSDate+Method.m in Sources */,
 			);

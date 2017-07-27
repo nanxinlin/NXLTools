@@ -9,7 +9,7 @@
 #ifndef AppMacro_h
 #define AppMacro_h
 
-#define AppBundleId  @"com.bpj.customer"//com.BoPinJia.Customer
+#define AppBundleId  @"" //根据项目来定
 
 //------------------------------------获取屏幕------------------------------------------
 
@@ -42,13 +42,10 @@
 //------------------------------------加载图片------------------------------------------
 #define kImage(name) [UIImage imageNamed:name]
 #define kImageUrl(imageViewname,name) [imageViewname sd_setImageWithURL:[NSURL URLWithString:name] placeholderImage:[UIImage imageNamed:@""]]
-
 //------------------------------------钱数转换------------------------------------------
 #define kMoney(name) [NSString stringWithFormat:@"%.2f",[name floatValue]]
-
 //定义了一个__weak的self_weak_变量
 #define KWeakSelf(weakSelf)   __weak __typeof(&*self) weakSelf = self;
-
 //局域定义了一个__strong的self指针指向self_weak
 #define KStrongSelf(strongSelf)  __strong __typeof(&*self) strongSelf = weakSelf;
 // NSURL

@@ -36,8 +36,9 @@
 #import <WebViewJavascriptBridge/WebViewJavascriptBridge.h> //加载H5页面使用的
 #import <JLRoutes/JLRoutes.h> //分享跳转到对应的页面
 #import <pop/POP.h>
-#import <YYKit/YYKit.h>
-/*YYKit YYModel — 高性能的 iOS JSON 模型框架。 
+#import <YYKit/YYKit.h>  //YYKit框架
+#import <PYSearch/PYSearch.h>
+/*YYKit YYModel — 高性能的 iOS JSON 模型框架。
         YYCache — 高性能的 iOS 缓存框架。 
         YYImage — 功能强大的 iOS 图像框架。
         YYWebImage — 高性能的 iOS 异步图像加载框架。
@@ -46,7 +47,7 @@
         YYDispatchQueuePool — iOS 全局并发队列管理工具。
         YYAsyncLayer — iOS 异步绘制与显示的工具。
         YYCategories — 功能丰富的 Category 类型工具库。*/
-#import "SwiftModule-Swift.h"
+#import "SwiftModule-Swift.h" //OC跟Swift混编
 #import "YBHttpTool.h"
 #import "MTVersionHelper.h"
 #import "DWScrollPictures.h"

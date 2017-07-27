@@ -34,5 +34,6 @@ pod 'RxCocoa'
 pod 'RxDataSources'
 pod 'ObjectMapper'
 pod 'Realm'
+pod 'PYSearch'
 
 end

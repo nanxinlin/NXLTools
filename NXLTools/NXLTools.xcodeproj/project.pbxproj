@@ -13,6 +13,7 @@
 		A71FD8BC1F29A56100229F3F /* UIAlertView+MyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A71FD8B71F29A56100229F3F /* UIAlertView+MyAlertView.m */; };
 		A71FD8BD1F29A56100229F3F /* TTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A71FD8B91F29A56100229F3F /* TTAlertView.m */; };
 		A71FD8C11F29C18D00229F3F /* TTStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A71FD8C01F29C18D00229F3F /* TTStarView.m */; };
+		A71FD8C61F29D6BC00229F3F /* UIView+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A71FD8C51F29D6BC00229F3F /* UIView+Method.m */; };
 		A761E8F41F25D35600B12943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A761E8F21F25D35600B12943 /* ViewController.swift */; };
 		A761E8F51F25D35600B12943 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A761E8F31F25D35600B12943 /* ViewController.xib */; };
 		A77FAA4B1F236133008E7266 /* NSString+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA4A1F236133008E7266 /* NSString+Method.m */; };
@@ -69,6 +70,8 @@
 		A71FD8BF1F29C18D00229F3F /* TTStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStarView.h; sourceTree = "<group>"; };
 		A71FD8C01F29C18D00229F3F /* TTStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStarView.m; sourceTree = "<group>"; };
 		A71FD8C21F29CF6B00229F3F /* APPIdKeySecretkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPIdKeySecretkey.h; sourceTree = "<group>"; };
+		A71FD8C41F29D6BC00229F3F /* UIView+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Method.h"; sourceTree = "<group>"; };
+		A71FD8C51F29D6BC00229F3F /* UIView+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Method.m"; sourceTree = "<group>"; };
 		A761E8F11F25D35600B12943 /* NXLTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NXLTools-Bridging-Header.h"; sourceTree = "<group>"; };
 		A761E8F21F25D35600B12943 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A761E8F31F25D35600B12943 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -182,6 +185,15 @@
 			path = TTStarView;
 			sourceTree = "<group>";
 		};
+		A71FD8C31F29D68000229F3F /* UIView+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A71FD8C41F29D6BC00229F3F /* UIView+Method.h */,
+				A71FD8C51F29D6BC00229F3F /* UIView+Method.m */,
+			);
+			path = "UIView+Extension";
+			sourceTree = "<group>";
+		};
 		A77FAA091F235AEB008E7266 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +220,7 @@
 		A77FAA431F235F1F008E7266 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A71FD8C31F29D68000229F3F /* UIView+Extension */,
 				A77FAA8A1F2442C2008E7266 /* NSDate+Extension */,
 				A77FAA481F236133008E7266 /* NSString+Extension */,
 			);
@@ -589,6 +602,7 @@
 				A77FAA811F23C5B1008E7266 /* DWSwipeGestures.m in Sources */,
 				A77FAA4B1F236133008E7266 /* NSString+Method.m in Sources */,
 				A77FAA671F23BBE8008E7266 /* MTVersionModel.m in Sources */,
+				A71FD8C61F29D6BC00229F3F /* UIView+Method.m in Sources */,
 				A7F2BA581F234EA900BB4A2C /* main.m in Sources */,
 				A71FD8BB1F29A56100229F3F /* FRAlertView.m in Sources */,
 				A77FAA5E1F23AD24008E7266 /* YBCacheTool.m in Sources */,

@@ -23,11 +23,12 @@ typedef NS_ENUM(NSInteger,LQQSideType) {
 };
 @interface UIView (Method)
 /**
- *  @author LQQ, 16-02-20 22:02:52
+ *  16-02-20 22:02:52
  *
  *  设置不同边的圆角
  *
  *  @param sideType 圆角类型
  *  @param cornerRadius 圆角半径
  */
-- (void)cornerSideType:(LQQSideType)sideType withCornerRadius:(CGFloat)cornerRadius;@end
+- (void)cornerSideType:(LQQSideType)sideType withCornerRadius:(CGFloat)cornerRadius;
+@end

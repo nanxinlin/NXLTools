@@ -91,7 +91,7 @@ typedef enum :NSUInteger {
  *  新特性视图代理方法
  *
  *  @param pageCount  当前所在界面索引
- *  @param imageCount 新特性图片总数
+ *  @param imageAllCount 新特性图片总数
  */
 - (void)dw_nowPageCount:(double)pageCount imageAllCount:(NSInteger)imageAllCount;
 
@@ -166,21 +166,23 @@ typedef enum :NSUInteger {
  *
  *  @param view                          当前控制器View
  *  @param delegate                      代理遵守者
- *  @param imageNameArray                引导图数组
+ *  @param imageLinkArray                引导图数组
  *  @param pageImageView                 imageView/某个imageView/imageView总量
  */
 - (void)dw_SetNetworkingNewFeaturesView:(UIView *)view delegate:(id)delegate imageLinkArray:(NSArray *)imageLinkArray pageImageView:(void (^)(UIView *PageImageView, int imageCount, int imageAllCount))pageImageView;
 
+
 /**
- *  设置本地图片轮播图
- *
- *  @param view         当前控制器View
- *  @param sizeY        轮播视图Y值
- *  @param height       轮播图高度
- *  @param pageY        pageController高度
- *  @param imageArray   轮播图数组
- *  @param timeInterval 轮播图轮播时间
- *  @param animateTimer 轮播图完成一次轮播的时间
+ 设置本地图片轮播图
+
+ @param view 当前控制器View
+ @param sizeY 轮播视图Y值
+ @param height 轮播图高度
+ @param pageY pageController高度
+ @param imageNameArray 轮播图数组
+ @param timeInterval 轮播图轮播时间
+ @param animateTimer 轮播图完成一次轮播的时间
+ @param pageImageView 回调数据
  */
 - (void)dw_SetShufflingFigureView:(UIView *)view sizeY:(CGFloat)sizeY  height:(CGFloat)height pageY:(CGFloat)pageY imageNameArray:(NSArray *)imageNameArray timeInterval:(NSTimeInterval)timeInterval animateTimer:(NSTimeInterval)animateTimer pageImageView:(void (^)(UIView *PageImageView, int imageCount, int imageAllCount))pageImageView;
 

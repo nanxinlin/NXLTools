@@ -322,6 +322,7 @@
 				A7F2BA591F234EA900BB4A2C /* AppDelegate.h */,
 				A7F2BA5A1F234EA900BB4A2C /* AppDelegate.m */,
 				A761E8F21F25D35600B12943 /* ViewController.swift */,
+				A761E8F11F25D35600B12943 /* NXLTools-Bridging-Header.h */,
 				A761E8F31F25D35600B12943 /* ViewController.xib */,
 				A7F2BA5F1F234EA900BB4A2C /* Main.storyboard */,
 				A7F2BA651F234EA900BB4A2C /* Assets.xcassets */,
@@ -329,7 +330,6 @@
 				A7F2BA6A1F234EA900BB4A2C /* Info.plist */,
 				A7F2BA621F234EA900BB4A2C /* NXLTools.xcdatamodeld */,
 				A7F2BA561F234EA900BB4A2C /* Supporting Files */,
-				A761E8F11F25D35600B12943 /* NXLTools-Bridging-Header.h */,
 			);
 			path = NXLTools;
 			sourceTree = "<group>";

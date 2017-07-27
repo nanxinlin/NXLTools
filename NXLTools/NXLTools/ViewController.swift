@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        TTHUDMessage.show(in: self.view, showTextOnly: "南", detailText: "鑫林", textMargin: 2);
         // Do any additional setup after loading the view.
     }
 

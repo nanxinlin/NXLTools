@@ -16,5 +16,7 @@
 // 随机色
 #define NXLRandomColor NXLColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
+#define kWhiteColor [UIColor whiteColor]
+
 
 #endif /* ColorMacro_h */

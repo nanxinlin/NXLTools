@@ -52,7 +52,7 @@ typedef NS_OPTIONS(NSUInteger, DWSwipeGestureType) {
  *
  *  @brief 添加手势
  *
- *  @param swipeGesture                手势类型
+ *  @param swipeGestureType                手势类型
  *  @param target                      方法执行者
  *  @param action                      方法名
  *  @param view                        手势添加视图

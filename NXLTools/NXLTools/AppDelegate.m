@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "SwiftModule-Swift.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +15,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
+    self.window = [[UIWindow alloc] initWithFrame:kScreenFrame];
+    self.window.backgroundColor = kWhiteColor;
+    self.window.rootViewController = [ViewController new];
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }

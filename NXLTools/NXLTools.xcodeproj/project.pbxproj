@@ -68,6 +68,7 @@
 		A71FD8B91F29A56100229F3F /* TTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAlertView.m; sourceTree = "<group>"; };
 		A71FD8BF1F29C18D00229F3F /* TTStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStarView.h; sourceTree = "<group>"; };
 		A71FD8C01F29C18D00229F3F /* TTStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStarView.m; sourceTree = "<group>"; };
+		A71FD8C21F29CF6B00229F3F /* APPIdKeySecretkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPIdKeySecretkey.h; sourceTree = "<group>"; };
 		A761E8F11F25D35600B12943 /* NXLTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NXLTools-Bridging-Header.h"; sourceTree = "<group>"; };
 		A761E8F21F25D35600B12943 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A761E8F31F25D35600B12943 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 				A77FAA551F23A78F008E7266 /* ColorMacro.h */,
 				A71FD8A11F29968900229F3F /* NetWorkMacro.h */,
 				A77FAA541F23A61A008E7266 /* Notification.h */,
+				A71FD8C21F29CF6B00229F3F /* APPIdKeySecretkey.h */,
 			);
 			path = Marcos;
 			sourceTree = "<group>";

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2E62A0BBCA9B6B234BCE66DD /* Pods_NXLTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C52A8AC5331A522404668F2 /* Pods_NXLTools.framework */; };
+		A761E8F41F25D35600B12943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A761E8F21F25D35600B12943 /* ViewController.swift */; };
+		A761E8F51F25D35600B12943 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A761E8F31F25D35600B12943 /* ViewController.xib */; };
 		A77FAA4B1F236133008E7266 /* NSString+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA4A1F236133008E7266 /* NSString+Method.m */; };
 		A77FAA5E1F23AD24008E7266 /* YBCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA591F23AD24008E7266 /* YBCacheTool.m */; };
 		A77FAA5F1F23AD24008E7266 /* YBHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FAA5B1F23AD24008E7266 /* YBHttpTool.m */; };
@@ -50,6 +52,9 @@
 		22FCFC0FD550A1C552B93676 /* Pods-NXLTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NXLTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NXLTools/Pods-NXLTools.debug.xcconfig"; sourceTree = "<group>"; };
 		2C52A8AC5331A522404668F2 /* Pods_NXLTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NXLTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B606D17367EB95CEFC6EDD /* Pods-NXLTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NXLTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-NXLTools/Pods-NXLTools.release.xcconfig"; sourceTree = "<group>"; };
+		A761E8F11F25D35600B12943 /* NXLTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NXLTools-Bridging-Header.h"; sourceTree = "<group>"; };
+		A761E8F21F25D35600B12943 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A761E8F31F25D35600B12943 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		A77FAA491F236133008E7266 /* NSString+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Method.h"; sourceTree = "<group>"; };
 		A77FAA4A1F236133008E7266 /* NSString+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Method.m"; sourceTree = "<group>"; };
 		A77FAA4D1F23667F008E7266 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -280,12 +285,15 @@
 				A77FAA091F235AEB008E7266 /* Classes */,
 				A7F2BA591F234EA900BB4A2C /* AppDelegate.h */,
 				A7F2BA5A1F234EA900BB4A2C /* AppDelegate.m */,
+				A761E8F21F25D35600B12943 /* ViewController.swift */,
+				A761E8F31F25D35600B12943 /* ViewController.xib */,
 				A7F2BA5F1F234EA900BB4A2C /* Main.storyboard */,
 				A7F2BA651F234EA900BB4A2C /* Assets.xcassets */,
 				A7F2BA671F234EA900BB4A2C /* LaunchScreen.storyboard */,
 				A7F2BA6A1F234EA900BB4A2C /* Info.plist */,
 				A7F2BA621F234EA900BB4A2C /* NXLTools.xcdatamodeld */,
 				A7F2BA561F234EA900BB4A2C /* Supporting Files */,
+				A761E8F11F25D35600B12943 /* NXLTools-Bridging-Header.h */,
 			);
 			path = NXLTools;
 			sourceTree = "<group>";
@@ -396,6 +404,7 @@
 					A7F2BA521F234EA900BB4A2C = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 86T459V69W;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					A7F2BA6E1F234EA900BB4A2C = {
@@ -439,6 +448,7 @@
 			files = (
 				A7F2BA691F234EA900BB4A2C /* LaunchScreen.storyboard in Resources */,
 				A7F2BA661F234EA900BB4A2C /* Assets.xcassets in Resources */,
+				A761E8F51F25D35600B12943 /* ViewController.xib in Resources */,
 				A7F2BA611F234EA900BB4A2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +522,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A761E8F41F25D35600B12943 /* ViewController.swift in Sources */,
 				A77FAA891F243895008E7266 /* TTHUDMessage.m in Sources */,
 				A7F2BA641F234EA900BB4A2C /* NXLTools.xcdatamodeld in Sources */,
 				A7F2BA5B1F234EA900BB4A2C /* AppDelegate.m in Sources */,
@@ -677,6 +688,7 @@
 			baseConfigurationReference = 22FCFC0FD550A1C552B93676 /* Pods-NXLTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 86T459V69W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NXLTools/Classes/libs/Marcos/PrefixHeader.pch;
@@ -684,7 +696,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nanxinlin.NXLTools;
+				PRODUCT_MODULE_NAME = SwiftModule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NXLTools/NXLTools-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -693,6 +709,7 @@
 			baseConfigurationReference = 44B606D17367EB95CEFC6EDD /* Pods-NXLTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 86T459V69W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NXLTools/Classes/libs/Marcos/PrefixHeader.pch;
@@ -700,13 +717,17 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nanxinlin.NXLTools;
+				PRODUCT_MODULE_NAME = SwiftModule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NXLTools/NXLTools-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		A7F2BA871F234EA900BB4A2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 86T459V69W;
 				INFOPLIST_FILE = NXLToolsTests/Info.plist;
@@ -720,6 +741,7 @@
 		A7F2BA881F234EA900BB4A2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 86T459V69W;
 				INFOPLIST_FILE = NXLToolsTests/Info.plist;
@@ -733,6 +755,7 @@
 		A7F2BA8A1F234EA900BB4A2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 86T459V69W;
 				INFOPLIST_FILE = NXLToolsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -745,6 +768,7 @@
 		A7F2BA8B1F234EA900BB4A2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 86T459V69W;
 				INFOPLIST_FILE = NXLToolsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

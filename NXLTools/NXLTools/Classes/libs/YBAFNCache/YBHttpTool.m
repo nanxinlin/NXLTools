@@ -56,6 +56,7 @@ static char *NSErrorStatusCodeKey = "NSErrorStatusCodeKey";
     }
     
     if (failure) {
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         failure(error);
     }
 }
@@ -83,6 +84,7 @@ static char *NSErrorStatusCodeKey = "NSErrorStatusCodeKey";
     sessionManager.requestSerializer.timeoutInterval = 30;
     //设置请求头  根据项目设置
     [sessionManager.requestSerializer setValue:@"ajSgfASewSsEhGdAsFf" forHTTPHeaderField:@"ticket"];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     return sessionManager;
 }
 
@@ -144,7 +146,8 @@ static char *NSErrorStatusCodeKey = "NSErrorStatusCodeKey";
             //缓存数据
             NSData *data = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
             [YBCacheTool cacheForData:data fileName:fileName];
-            
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+
             success(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -172,14 +175,13 @@ static char *NSErrorStatusCodeKey = "NSErrorStatusCodeKey";
     YBWeakSelf
     [sessionManager POST:httpStr parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
         
-    
-        
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (success) {
             //缓存数据
             NSData *data = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
             [YBCacheTool cacheForData:data fileName:fileName];
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
             success(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -206,6 +208,8 @@ static char *NSErrorStatusCodeKey = "NSErrorStatusCodeKey";
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+
             success(responseObject);
         }
         
@@ -229,6 +233,7 @@ static char *NSErrorStatusCodeKey = "NSErrorStatusCodeKey";
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
             success(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

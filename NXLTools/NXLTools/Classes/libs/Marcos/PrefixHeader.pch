@@ -49,5 +49,7 @@
 #import "YBHttpTool.h"
 #import "MTVersionHelper.h"
 #import "DWScrollPictures.h"
-//#import "SwiftModule-Swift.h"
+#import "SwiftModule-Swift.h"
+#import "TTAlertView.h"
+#import "TTHUDMessage.h"
 #endif /* PrefixHeader_pch */

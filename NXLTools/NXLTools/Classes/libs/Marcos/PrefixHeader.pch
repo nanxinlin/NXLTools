@@ -40,6 +40,7 @@
 #import <YYKit/YYKit.h>  //YYKit框架
 #import <PYSearch/PYSearch.h> //搜索框架
 #import <XHLaunchAd/XHLaunchAd.h> //启动页广告
+#import <WZLBadge/WZLBadgeImport.h> //角标
 /*YYKit YYModel — 高性能的 iOS JSON 模型框架。
         YYCache — 高性能的 iOS 缓存框架。 
         YYImage — 功能强大的 iOS 图像框架。

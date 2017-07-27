@@ -36,5 +36,6 @@ pod 'ObjectMapper'
 pod 'Realm'
 pod 'PYSearch'
 pod 'XHLaunchAd'
+pod 'WZLBadge'
 
 end

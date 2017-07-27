@@ -63,6 +63,7 @@ PODS:
   - SVProgressHUD (2.1.2)
   - Toast (3.1.0)
   - WebViewJavascriptBridge (6.0.2)
+  - WZLBadge (1.2.6)
   - XHLaunchAd (3.5.5)
   - YPTabBarController (2.2.3)
   - YYKit (1.0.9):
@@ -98,6 +99,7 @@ DEPENDENCIES:
   - SVProgressHUD
   - Toast
   - WebViewJavascriptBridge
+  - WZLBadge
   - XHLaunchAd
   - YPTabBarController
   - YYKit
@@ -132,10 +134,11 @@ SPEC CHECKSUMS:
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
+  WZLBadge: 9ec779dcfd94c825518b395e8315fccaabff1bfa
   XHLaunchAd: 7827b5608c91606f372e6475556bd86968100d0e
   YPTabBarController: 2e0e97b2d9d4b28b722ecb57700b7cd4d1b38a47
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 7567ab92e7ae1a07ea9d3f6ac44749f1b75e643a
+PODFILE CHECKSUM: d0245268f95b06a7f8fc3e3d25dc95767bf39453
 
 COCOAPODS: 1.2.0

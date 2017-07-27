@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F7EA458AF1079A642C324D6B417DBEEE"
+               BlueprintIdentifier = "0FA62F32B3B7D8F0131959468C3BADC7"
                BuildableName = "Pods_NXLTools.framework"
                BlueprintName = "Pods-NXLTools"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F7EA458AF1079A642C324D6B417DBEEE"
+            BlueprintIdentifier = "0FA62F32B3B7D8F0131959468C3BADC7"
             BuildableName = "Pods_NXLTools.framework"
             BlueprintName = "Pods-NXLTools"
             ReferencedContainer = "container:Pods.xcodeproj">

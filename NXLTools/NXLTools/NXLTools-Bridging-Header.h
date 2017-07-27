@@ -52,3 +52,4 @@
 #import "DWScrollPictures.h"
 #import "TTAlertView.h"
 #import "TTHUDMessage.h"
+#import "TTStarView.h"

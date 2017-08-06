@@ -14,13 +14,13 @@
 //------------------------------------获取屏幕------------------------------------------
 
 //屏幕大小
-#define kScreenFrame ([UIScreen mainScreen].applicationFrame)
+#define kScreenFrame ([UIScreen mainScreen].bounds)
 //屏幕宽度
 #define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
 //屏幕高度
 #define kScreenheight ([UIScreen mainScreen].bounds.size.height)
 //Window
-#define key_Window  [[UIApplication sharedApplication].delegate window]
+#define key_Window [[UIApplication sharedApplication].keyWindow]
 //UIDevice
 #define ISIPAD ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
 #define IS320Screen (MAIN_SCREEN.bounds.size.width == 320)

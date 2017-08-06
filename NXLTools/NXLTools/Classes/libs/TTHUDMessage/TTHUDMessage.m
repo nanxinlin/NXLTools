@@ -28,15 +28,15 @@ static TTHUDMessage *instance;
 }
 
 + (void)showInView:(UIView *)view{
-    [self showInView:view showText:Loading detailsText:KEmpty_str];
+    [self showInView:view showText:Loading detailsText:kEmpty_str];
 }
 
 + (void)showInView:(UIView *)view showText:(NSString *)text {
-    [self showInView:view showText:text detailsText:KEmpty_str];
+    [self showInView:view showText:text detailsText:kEmpty_str];
 }
 
 + (void)showInView:(UIView *)view showDetailsText:(NSString *)detailsText {
-    [self showInView:view showText:KEmpty_str detailsText:detailsText];
+    [self showInView:view showText:kEmpty_str detailsText:detailsText];
 }
 
 + (void)showInView:(UIView *)view showRequestText:(NSString *)text{
@@ -127,7 +127,7 @@ static TTHUDMessage *instance;
 }
 
 + (void)showCompletedText:(NSString *)text withCompletedType:(HUDShowCompletedType)completedType {
-    [self showInView:KEY_WINDOW showCompletedText:text withCompletedType:completedType];
+    [self showInView:key_Window showCompletedText:text withCompletedType:completedType];
 }
 
 + (void)showInView:(UIView *)view showCompletedText:(NSString *)text withCompletedType:(HUDShowCompletedType)completedType {
